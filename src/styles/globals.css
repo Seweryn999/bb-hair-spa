@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+a {
+  color: white;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #d1d5db;
+}
+
+html {
+  scroll-behavior: smooth;
+}
