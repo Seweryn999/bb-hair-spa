@@ -1,0 +1,63 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-8b5c93f81499eb89.js",
+      "static/chunks/4bd1b696-ea8457096315284e.js",
+      "static/chunks/684-a1b1e756c682c78a.js",
+      "static/chunks/main-app-58330e0608214a83.js",
+      "static/chunks/app/_not-found/page-f76c6b05adeed9bd.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-8b5c93f81499eb89.js",
+      "static/chunks/4bd1b696-ea8457096315284e.js",
+      "static/chunks/684-a1b1e756c682c78a.js",
+      "static/chunks/main-app-58330e0608214a83.js",
+      "static/css/dbea41e497604e03.css",
+      "static/chunks/8e1d74a4-0ef716593991445c.js",
+      "static/chunks/874-c8eb6436627fc7f1.js",
+      "static/chunks/733-c457d61616010cfb.js",
+      "static/chunks/app/layout-09148873671e8cfd.js"
+    ],
+    "/kontakt/page": [
+      "static/chunks/webpack-8b5c93f81499eb89.js",
+      "static/chunks/4bd1b696-ea8457096315284e.js",
+      "static/chunks/684-a1b1e756c682c78a.js",
+      "static/chunks/main-app-58330e0608214a83.js",
+      "static/chunks/874-c8eb6436627fc7f1.js",
+      "static/chunks/app/kontakt/page-956eb18342c8ee92.js"
+    ],
+    "/oferta/page": [
+      "static/chunks/webpack-8b5c93f81499eb89.js",
+      "static/chunks/4bd1b696-ea8457096315284e.js",
+      "static/chunks/684-a1b1e756c682c78a.js",
+      "static/chunks/main-app-58330e0608214a83.js",
+      "static/chunks/874-c8eb6436627fc7f1.js",
+      "static/chunks/app/oferta/page-ad2429a87994fae4.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-8b5c93f81499eb89.js",
+      "static/chunks/4bd1b696-ea8457096315284e.js",
+      "static/chunks/684-a1b1e756c682c78a.js",
+      "static/chunks/main-app-58330e0608214a83.js",
+      "static/chunks/874-c8eb6436627fc7f1.js",
+      "static/chunks/app/page-6f6f66755efffa4d.js"
+    ],
+    "/polityka-prywatnosci/page": [
+      "static/chunks/webpack-8b5c93f81499eb89.js",
+      "static/chunks/4bd1b696-ea8457096315284e.js",
+      "static/chunks/684-a1b1e756c682c78a.js",
+      "static/chunks/main-app-58330e0608214a83.js",
+      "static/chunks/app/polityka-prywatnosci/page-fea13a26321abc44.js"
+    ],
+    "/salon/page": [
+      "static/chunks/webpack-8b5c93f81499eb89.js",
+      "static/chunks/4bd1b696-ea8457096315284e.js",
+      "static/chunks/684-a1b1e756c682c78a.js",
+      "static/chunks/main-app-58330e0608214a83.js",
+      "static/css/16466131d8ae5843.css",
+      "static/chunks/874-c8eb6436627fc7f1.js",
+      "static/chunks/339-9ee20366de1eeef1.js",
+      "static/chunks/app/salon/page-0ed70d6f218373cd.js"
+    ]
+  }
+}
