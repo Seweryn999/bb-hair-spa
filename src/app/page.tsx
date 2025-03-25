@@ -1,7 +1,8 @@
-import HeroSection from "@/components/sections/HeroSection";
-import AboutUs from "@/components/sections/AboutUs";
-import Services from "@/components/sections/Services";
-import SocialPostsSection from "@/components/sections/SocialMedia";
+import HeroSection from "../components/sections/HeroSection";
+import AboutUs from "../components/sections/AboutUs";
+import Services from "../components/sections/Services";
+import Testimonials from "../components/sections/Testimonials";
+import SocialPostsSection from "../components/sections/SocialMedia";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
       <HeroSection />
       <AboutUs />
       <Services />
+      <Testimonials />
       <SocialPostsSection />
     </>
   );

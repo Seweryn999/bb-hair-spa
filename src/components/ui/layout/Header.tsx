@@ -95,11 +95,11 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href="/galeria"
+                href="/salon"
                 style={{ color: scrolled ? "black" : "white" }}
                 className={linkBaseClasses}
               >
-                Galeria
+                Salon
               </Link>
             </li>
             <li>

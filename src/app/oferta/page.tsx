@@ -1,3 +1,5 @@
+import SocialPostsSection from "../../components/sections/SocialMedia";
+
 type Service = {
   title: string;
   details?: string;
@@ -102,6 +104,9 @@ const OfertaPage = () => {
   return (
     <section className="bg-[#f9f9f9] text-gray-800 py-16 px-6 md:px-8">
       <div className="max-w-5xl mx-auto">
+        <title>BB Hair Spa - Oferta</title>
+        <link rel="icon" href="/logo/logob.svg" />
+
         <h1 className="text-3xl md:text-4xl font-light mb-8 tracking-wide uppercase text-gray-900 text-center">
           Nasza oferta
         </h1>
@@ -125,24 +130,26 @@ const OfertaPage = () => {
                     key={index}
                     className="bg-white rounded-lg shadow-sm p-5 flex flex-col md:flex-row md:items-center md:justify-between hover:shadow-md transition-shadow duration-200"
                   >
-                    <div className="flex-1">
-                      <h3 className="text-lg font-medium text-gray-900">
-                        {service.title}
-                      </h3>
-                      {service.details && (
-                        <p className="text-sm text-gray-500 mt-1 leading-relaxed">
-                          {service.details}
-                        </p>
-                      )}
-                      {service.price && (
-                        <p className="mt-2 text-base font-semibold text-gray-800">
-                          {service.price}
-                        </p>
-                      )}
+                    <div className="flex-1 flex items-center">
+                      <div>
+                        <h3 className="text-lg font-medium text-gray-900">
+                          {service.title}
+                        </h3>
+                        {service.details && (
+                          <p className="text-sm text-gray-500 mt-1 leading-relaxed">
+                            {service.details}
+                          </p>
+                        )}
+                        {service.price && (
+                          <p className="mt-2 text-base font-semibold text-gray-800">
+                            {service.price}
+                          </p>
+                        )}
+                      </div>
                     </div>
                     <div className="mt-4 md:mt-0 md:ml-4">
                       <a
-                        // href=Booksy Link
+                        href="https://booksy.com"
                         className="inline-block bg-gray-900 text-white text-sm font-medium px-6 py-2 rounded-full hover:bg-gray-700 transition-colors duration-200"
                       >
                         Umów wizytę
@@ -155,6 +162,8 @@ const OfertaPage = () => {
           ))}
         </div>
       </div>
+
+      <SocialPostsSection />
     </section>
   );
 };

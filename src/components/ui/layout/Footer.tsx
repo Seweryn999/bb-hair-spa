@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <div className="mb-4">
             <Image
-              src="/logo/logow.svg"
+              src="/logo/logoog.png"
               alt="BB Hair Spa Logo"
               width={150}
               height={50}
@@ -124,7 +124,7 @@ const Footer = () => {
         <p className="mt-2">
           Wdrożenie:{" "}
           <Link
-            href="https://www.stalink.com"
+            href="https://www.stalink.pl"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"
