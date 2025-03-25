@@ -1,15 +1,5 @@
+// next.config.ts
 import type { NextConfig } from "next";
-
-function ensureLeadingSlash(path: string) {
-  if (!path || path === "") return ""; // jeżeli pusty, zwróć pusty ciąg
-  if (!path.startsWith("/")) {
-    return "/" + path;
-  }
-  return path;
-}
-
-let basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-basePath = ensureLeadingSlash(basePath);
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -17,8 +7,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath,
-  assetPrefix: basePath,
+  basePath: "",
+  assetPrefix: "",
 };
 
 export default nextConfig;
