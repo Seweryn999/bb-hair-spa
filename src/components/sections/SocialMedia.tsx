@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 interface Post {
@@ -143,14 +142,12 @@ const SocialPostsSection = () => {
                   className="block group"
                 >
                   <div className="relative overflow-hidden rounded-lg">
-                    <Image
-                      src={post.imageUrl}
-                      alt="Instagram post"
-                      layout="responsive"
-                      width={500}
-                      height={500}
-                      className="transform group-hover:scale-105 transition duration-300 ease-in-out"
-                    />
+                    <div
+                      className="aspect-square w-full bg-cover bg-center transform group-hover:scale-105 transition duration-300 ease-in-out"
+                      style={{ backgroundImage: `url(${post.imageUrl})` }}
+                      role="img"
+                      aria-label="Instagram post"
+                    ></div>
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-25 transition duration-300"></div>
                   </div>
                 </a>
@@ -172,14 +169,12 @@ const SocialPostsSection = () => {
                   className="block group"
                 >
                   <div className="relative overflow-hidden rounded-lg">
-                    <Image
-                      src={post.imageUrl}
-                      alt="Facebook post"
-                      layout="responsive"
-                      width={500}
-                      height={500}
-                      className="transform group-hover:scale-105 transition duration-300 ease-in-out"
-                    />
+                    <div
+                      className="aspect-square w-full bg-cover bg-center transform group-hover:scale-105 transition duration-300 ease-in-out"
+                      style={{ backgroundImage: `url(${post.imageUrl})` }}
+                      role="img"
+                      aria-label="Facebook post"
+                    ></div>
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-25 transition duration-300"></div>
                   </div>
                 </a>

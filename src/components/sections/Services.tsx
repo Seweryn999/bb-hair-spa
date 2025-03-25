@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const Services = () => {
@@ -49,12 +48,11 @@ const Services = () => {
               key={index}
               className="bg-gray-50 rounded-lg shadow p-6 flex flex-col items-center"
             >
-              <Image
-                src={offer.image}
-                alt={offer.title}
-                width={400}
-                height={300}
-                className="w-full h-auto rounded-md mb-4 object-cover"
+              <div
+                className="w-full h-[300px] rounded-md mb-4 bg-cover bg-center"
+                style={{ backgroundImage: `url('${offer.image}')` }}
+                role="img"
+                aria-label={offer.title}
               />
               <h3 className="text-xl font-semibold text-gray-900 mb-2 text-center">
                 {offer.title}
