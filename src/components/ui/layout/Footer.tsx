@@ -55,18 +55,18 @@ const Footer = () => {
           <h3 className="text-white font-semibold mb-4 uppercase">Menu</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/onas" className="hover:text-white">
-                O nas
+              <Link href="/" className="hover:text-white">
+                Start
               </Link>
             </li>
             <li>
-              <Link href="/uslugi" className="hover:text-white">
-                Usługi
+              <Link href="/oferta" className="hover:text-white">
+                Oferta
               </Link>
             </li>
             <li>
-              <Link href="/cennik" className="hover:text-white">
-                Cennik
+              <Link href="/salon" className="hover:text-white">
+                Salon
               </Link>
             </li>
             <li>
@@ -87,11 +87,7 @@ const Footer = () => {
                 Polityka prywatności
               </Link>
             </li>
-            <li>
-              <Link href="/regulamin" className="hover:text-white">
-                Regulamin
-              </Link>
-            </li>
+            <li></li>
           </ul>
         </div>
 
