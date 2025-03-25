@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "NODE_ENV=production next build",
-    "start": "next start",
-    "deploy": "next build && echo.> out/.nojekyll && gh-pages -d out",
-    "lint": "next lint"
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start --port 80"
   },
   "dependencies": {
     "framer-motion": "^12.5.0",
@@ -23,6 +21,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
     "gh-pages": "^6.3.0",
