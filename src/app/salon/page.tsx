@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import SocialPostsSection from "../../components/sections/SocialMedia";
+// import SocialPostsSection from "../../components/sections/SocialMedia";
 import Testimonials from "../../components/sections/Testimonials";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 const SalonPage = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const images = [
     "/images/bb1.jpg",
     "/images/bb2.jpg",
@@ -21,7 +22,7 @@ const SalonPage = () => {
     <section className="py-20 bg-white text-gray-800">
       <Head>
         <title>BB Hair Spa - Salon</title>
-        <link rel="icon" href="/logo/logob.svg" />
+        <link rel="icon" href={`${basePath}/logo/logob.svg`} />
       </Head>
       <div className="container mx-auto px-4 mb-16">
         <h1 className="text-4xl font-light uppercase tracking-wider text-center mb-10">
@@ -44,7 +45,7 @@ const SalonPage = () => {
                   <div className="relative w-full max-w-4xl aspect-[4/3] overflow-hidden rounded-lg">
                     <div
                       className="w-full h-full bg-cover bg-center"
-                      style={{ backgroundImage: `url(${src})` }}
+                      style={{ backgroundImage: `url(${basePath}${src})` }}
                       role="img"
                       aria-label={`Zdjęcie salonu nr ${index + 1}`}
                     ></div>
@@ -96,7 +97,7 @@ const SalonPage = () => {
         </div>
 
         <Testimonials />
-        <SocialPostsSection />
+        {/* <SocialPostsSection /> */}
       </div>
     </section>
   );

@@ -3,13 +3,15 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   return (
     <footer className="bg-black text-gray-300 py-10">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <div className="mb-4">
             <Image
-              src="/logo/logoog.png"
+              src={`${basePath}/logo/logoog.png`}
               alt="BB Hair Spa Logo"
               width={150}
               height={50}

@@ -11,6 +11,7 @@ interface Post {
 }
 
 const SocialPostsSection = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
@@ -144,7 +145,9 @@ const SocialPostsSection = () => {
                   <div className="relative overflow-hidden rounded-lg">
                     <div
                       className="aspect-square w-full bg-cover bg-center transform group-hover:scale-105 transition duration-300 ease-in-out"
-                      style={{ backgroundImage: `url(${post.imageUrl})` }}
+                      style={{
+                        backgroundImage: `url(${basePath}${post.imageUrl})`,
+                      }}
                       role="img"
                       aria-label="Instagram post"
                     ></div>
@@ -171,7 +174,9 @@ const SocialPostsSection = () => {
                   <div className="relative overflow-hidden rounded-lg">
                     <div
                       className="aspect-square w-full bg-cover bg-center transform group-hover:scale-105 transition duration-300 ease-in-out"
-                      style={{ backgroundImage: `url(${post.imageUrl})` }}
+                      style={{
+                        backgroundImage: `url(${basePath}${post.imageUrl})`,
+                      }}
                       role="img"
                       aria-label="Facebook post"
                     ></div>

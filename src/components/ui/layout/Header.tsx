@@ -3,11 +3,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -27,20 +30,27 @@ const Header = () => {
     transition: "background-color 300ms, color 300ms",
   };
 
-  // Desktop reservation button classes
   const reservationButtonClasses = scrolled
     ? "border !border-black !text-black px-4 py-1 rounded transition-all duration-300 hover:scale-105 hover:shadow-lg"
     : "border !border-white !text-white px-4 py-1 rounded transition-all duration-300 hover:scale-105 hover:shadow-lg";
 
-  // Mobile reservation button classes
   const mobileReservationButtonClasses =
     "border !border-white !text-white px-4 py-1 rounded transition-all duration-300 hover:scale-105 hover:shadow-lg";
 
-  // Navigation link classes
   const linkBaseClasses =
     "relative transition-colors duration-300 ease-in-out hover:text-gray-300 after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:bg-gray-300 after:w-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full";
 
-  // Menu toggle button classes
+  const getLinkClasses = (href: string) => {
+    let isActive = false;
+    if (href === "/#hero") {
+      // Na stronie głównej, pathname to "/" lub "/#hero"
+      isActive = pathname === "/" || pathname === "/#hero";
+    } else {
+      isActive = pathname === href || pathname.startsWith(href + "#");
+    }
+    return `${linkBaseClasses} ${isActive ? "font-bold underline" : ""}`;
+  };
+
   const menuButtonClasses =
     "transition-all duration-300 ease-in-out transform hover:scale-110 hover:rotate-12";
 
@@ -52,9 +62,19 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-4 py-4">
         <Link href="/" className="flex items-center space-x-2">
           {scrolled ? (
-            <Image src="/logo/logob.svg" alt="Logo" width={40} height={40} />
+            <Image
+              src={`${basePath}/logo/logob.svg`}
+              alt="Logo"
+              width={40}
+              height={40}
+            />
           ) : (
-            <Image src="/logo/logow.svg" alt="Logo" width={40} height={40} />
+            <Image
+              src={`${basePath}/logo/logow.svg`}
+              alt="Logo"
+              width={40}
+              height={40}
+            />
           )}
           <span
             className="text-2xl font-light tracking-wide transition-colors duration-300"
@@ -79,7 +99,7 @@ const Header = () => {
               <Link
                 href="/#hero"
                 style={{ color: scrolled ? "black" : "white" }}
-                className={linkBaseClasses}
+                className={getLinkClasses("/#hero")}
               >
                 Start
               </Link>
@@ -88,7 +108,7 @@ const Header = () => {
               <Link
                 href="/oferta"
                 style={{ color: scrolled ? "black" : "white" }}
-                className={linkBaseClasses}
+                className={getLinkClasses("/oferta")}
               >
                 Oferta
               </Link>
@@ -97,7 +117,7 @@ const Header = () => {
               <Link
                 href="/salon"
                 style={{ color: scrolled ? "black" : "white" }}
-                className={linkBaseClasses}
+                className={getLinkClasses("/salon")}
               >
                 Salon
               </Link>
@@ -106,7 +126,7 @@ const Header = () => {
               <Link
                 href="/kontakt"
                 style={{ color: scrolled ? "black" : "white" }}
-                className={linkBaseClasses}
+                className={getLinkClasses("/kontakt")}
               >
                 Kontakt
               </Link>
@@ -141,7 +161,7 @@ const Header = () => {
           <li>
             <Link
               href="/#hero"
-              className={`${linkBaseClasses} text-white`}
+              className={`${getLinkClasses("/#hero")} text-white`}
               onClick={toggleMenu}
             >
               Start
@@ -150,7 +170,7 @@ const Header = () => {
           <li>
             <Link
               href="/oferta"
-              className={`${linkBaseClasses} text-white`}
+              className={`${getLinkClasses("/oferta")} text-white`}
               onClick={toggleMenu}
             >
               Oferta
@@ -159,7 +179,7 @@ const Header = () => {
           <li>
             <Link
               href="/galeria"
-              className={`${linkBaseClasses} text-white`}
+              className={`${getLinkClasses("/galeria")} text-white`}
               onClick={toggleMenu}
             >
               Galeria
@@ -168,7 +188,7 @@ const Header = () => {
           <li>
             <Link
               href="/kontakt"
-              className={`${linkBaseClasses} text-white`}
+              className={`${getLinkClasses("/kontakt")} text-white`}
               onClick={toggleMenu}
             >
               Kontakt

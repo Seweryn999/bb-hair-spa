@@ -4,11 +4,12 @@ import React from "react";
 import SocialMedia from "../../components/sections/SocialMedia";
 
 const KontaktPage = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <section className="py-20 bg-white text-gray-800">
-          <div className="container mx-auto px-4">
-              <title>BB Hair Spa - Kontakt</title>
-              <link rel="icon" href="/logo/logob.svg" />
+      <div className="container mx-auto px-4">
+        <title>BB Hair Spa - Kontakt</title>
+        <link rel="icon" href={`${basePath}/logo/logob.svg`} />
         <h1 className="text-4xl font-light uppercase tracking-wider text-center mb-10">
           Kontakt
         </h1>

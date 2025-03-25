@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const Services = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const homeOffers = [
     {
       title: "Strzyżenie i modelowanie",
@@ -50,7 +51,9 @@ const Services = () => {
             >
               <div
                 className="w-full h-[300px] rounded-md mb-4 bg-cover bg-center"
-                style={{ backgroundImage: `url('${offer.image}')` }}
+                style={{
+                  backgroundImage: `url('${basePath}${offer.image}')`,
+                }}
                 role="img"
                 aria-label={offer.title}
               />
