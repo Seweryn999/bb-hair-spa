@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
-// Zmodyfikuj environment tak, by zawsze mieć poprzedzający slash
-// Jeśli user wstawi "bb-hair-spa", to i tak dodamy "/" z przodu
 function ensureLeadingSlash(path: string) {
+  if (!path || path === "") return ""; // jeżeli pusty, zwróć pusty ciąg
   if (!path.startsWith("/")) {
     return "/" + path;
   }
