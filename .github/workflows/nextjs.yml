@@ -11,15 +11,16 @@ jobs:
       image: seesharprun/pandoc-build
     steps:
       - name: "Checkout Code"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4 # Updated to v4 (v2 is deprecated)
       - name: "Run Pandoc Builds"
         run: ls | grep '.md' | xargs basename -s '.md' | xargs -I % sh -c "pandoc %.md --standalone --slide-level=3 --reference-doc=../.production/template.pptx --variable=monofont:'Cascadia Code' --output %-v${{ github.run_number }}.pptx"
         working-directory: ./presentations
       - name: "Upload Presentation Artifacts"
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4 # Updated to v4 for compatibility and support
         with:
           name: presentations
           path: ./presentations/*.pptx
+
   release-content:
     name: "Create GitHub Release"
     runs-on: ubuntu-latest
@@ -28,12 +29,13 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: "Download Presentation Artifacts"
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v4 # Consistent with upload-artifact@v4
         with:
           name: presentations
+          path: ./presentations # Explicit path for downloaded files
       - name: "Create GitHub Release"
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2 # Updated to v2 (v1 is older, v2 is current)
         with:
-          files: ./**/*.pptx
+          files: ./presentations/*.pptx # Corrected path to match downloaded artifacts
           tag_name: v${{ github.run_number }}
           name: Release V${{ github.run_number }}
