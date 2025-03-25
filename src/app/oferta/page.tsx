@@ -100,6 +100,22 @@ const categorizedServices: ServiceCategory[] = [
   },
 ];
 
+const slugify = (str: string) => {
+  return str
+    .toLowerCase()
+    .replace(/ą/g, "a")
+    .replace(/ć/g, "c")
+    .replace(/ę/g, "e")
+    .replace(/ł/g, "l")
+    .replace(/ń/g, "n")
+    .replace(/ó/g, "o")
+    .replace(/ś/g, "s")
+    .replace(/ź/g, "z")
+    .replace(/ż/g, "z")
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9\-]/g, "");
+};
+
 const OfertaPage = () => {
   return (
     <section className="bg-[#f9f9f9] text-gray-800 py-16 px-6 md:px-8">
@@ -119,7 +135,7 @@ const OfertaPage = () => {
 
         <div className="space-y-12">
           {categorizedServices.map((category, idx) => (
-            <div key={idx} className="text-left">
+            <div key={idx} id={slugify(category.name)} className="text-left">
               <h2 className="text-2xl font-semibold text-gray-900 mb-6 border-b border-gray-200 pb-2">
                 {category.name}
               </h2>
@@ -147,7 +163,7 @@ const OfertaPage = () => {
                         )}
                       </div>
                     </div>
-                    <div className="mt-4 md:mt-0 md:ml-4">
+                    <div className="mt-4 md:mt-0 md:text-right">
                       <a
                         href="https://booksy.com"
                         className="inline-block bg-gray-900 text-white text-sm font-medium px-6 py-2 rounded-full hover:bg-gray-700 transition-colors duration-200"

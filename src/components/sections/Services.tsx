@@ -9,6 +9,7 @@ const Services = () => {
         "Podkreśl swój styl dzięki profesjonalnemu strzyżeniu i precyzyjnemu modelowaniu.",
       price: "od 50 zł",
       image: "/images/strzmodel.jpg",
+      slug: "strzyzenie-i-modelowanie",
     },
     {
       title: "Kolorowanie",
@@ -16,6 +17,7 @@ const Services = () => {
         "Nowoczesne techniki koloryzacji dla każdego rodzaju włosów.",
       price: "od 300 zł",
       image: "/images/kol.jpg",
+      slug: "koloryzacja-wlosow",
     },
     {
       title: "Pielęgnacja",
@@ -23,6 +25,7 @@ const Services = () => {
         "Regenerujące zabiegi keratynowe, pielęgnacja Davroe i indywidualnie dobrane kuracje.",
       price: "od 150 zł",
       image: "/images/piel.jpg",
+      slug: "pielenacja-wlosow",
     },
     {
       title: "Zabiegi trychologiczne",
@@ -30,6 +33,7 @@ const Services = () => {
         "Zdrowa skóra głowy to podstawa. Oczyszczanie, infuzja tlenowa, peelingi i więcej.",
       price: "od 250 zł",
       image: "/images/trych.jpg",
+      slug: "zabiegi-trychologiczne",
     },
   ];
 
@@ -62,7 +66,7 @@ const Services = () => {
                 {offer.price}
               </p>
               <Link
-                href="/oferta"
+                href={`/oferta#${offer.slug}`}
                 className="bg-black text-white text-sm px-5 py-2 rounded-full hover:bg-gray-800 transition mt-6"
               >
                 Oferta

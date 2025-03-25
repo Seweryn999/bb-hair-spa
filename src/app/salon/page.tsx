@@ -29,6 +29,7 @@ const SalonPage = () => {
         </h1>
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden md:flex items-center p-6">
+          {/* Swiper z obrazami salonu */}
           <div className="md:w-1/2 mb-6 md:mb-0">
             <Swiper
               modules={[Navigation]}
@@ -56,6 +57,7 @@ const SalonPage = () => {
             </Swiper>
           </div>
 
+          {/* Informacje o salonie */}
           <div className="md:w-1/2 flex flex-col items-center justify-center text-center">
             <h2 className="text-2xl font-semibold text-gray-900">
               BB Hair Spa
@@ -73,6 +75,16 @@ const SalonPage = () => {
                 +48 793 015 386
               </a>
             </p>
+
+            {/* Godziny otwarcia */}
+            <div className="mt-4 text-sm text-gray-600 leading-relaxed">
+              <h3 className="font-semibold mb-1">Godziny otwarcia:</h3>
+              <p>Pon: 10:00 - 20:00</p>
+              <p>Wt - Pt: 08:00 - 20:00</p>
+              <p>Sob: 09:00 - 18:00</p>
+              <p className="mb-1">Nd: Zamknięte</p>
+            </div>
+
             <div className="mt-6">
               <a
                 href="https://booksy.com"
