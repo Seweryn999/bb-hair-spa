@@ -10,4 +10,4 @@ jobs:
       - name: Install NPM dependencies
         run: npm install
       - name: Build static website
-        uses: npm run build
+        run: npm run build
