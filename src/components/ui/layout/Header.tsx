@@ -84,6 +84,7 @@ const Header = () => {
           </span>
         </Link>
 
+        {/* Ikona hamburgera (mobile) */}
         <button
           style={{ color: scrolled ? "black" : "white" }}
           className={`md:hidden text-2xl focus:outline-none ${menuButtonClasses}`}
@@ -93,6 +94,7 @@ const Header = () => {
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
 
+        {/* Menu desktopowe */}
         <nav className="hidden md:block">
           <ul className="flex space-x-6 text-sm font-light tracking-wide">
             <li>
@@ -145,6 +147,7 @@ const Header = () => {
         </nav>
       </div>
 
+      {/* Menu mobilne (wysuwane) */}
       <div
         className={`md:hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-90 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
@@ -176,13 +179,14 @@ const Header = () => {
               Oferta
             </Link>
           </li>
+
           <li>
             <Link
-              href="/galeria"
-              className={`${getLinkClasses("/galeria")} text-white`}
+              href="/salon"
+              className={`${getLinkClasses("/salon")} text-white`}
               onClick={toggleMenu}
             >
-              Galeria
+              Salon
             </Link>
           </li>
           <li>
