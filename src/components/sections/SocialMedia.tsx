@@ -88,7 +88,7 @@ const SocialPostsSection = () => {
       {
         id: "fb4",
         imageUrl: "/images/fb4.jpg",
-        link: "https://www.facebook.com/photo.php?fbid=1006493724829600&set=pb.100064069445694.-2207520000&type=3&locale=pl_PL",
+        link: "https://www.facebook.com/photo.php?fbid=954614000017573&set=pb.100064069445694.-2207520000&type=3&locale=pl_PL",
         source: "facebook",
       },
       {
