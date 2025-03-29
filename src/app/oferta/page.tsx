@@ -179,7 +179,7 @@ const OfertaPage = () => {
           ))}
         </div>
       </div>
-
+      <div className="mt-8"></div>
       <SocialPostsSection />
     </section>
   );

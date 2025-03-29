@@ -122,7 +122,7 @@ const Footer = () => {
         <p className="mt-2">
           Wdrożenie:{" "}
           <Link
-            href="https://www.stalink.pl"
+            href="https://github.com/Seweryn999"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"

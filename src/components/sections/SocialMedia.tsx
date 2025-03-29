@@ -143,14 +143,11 @@ const SocialPostsSection = () => {
                   className="block group"
                 >
                   <div className="relative overflow-hidden rounded-lg">
-                    <div
-                      className="aspect-square w-full bg-cover bg-center transform group-hover:scale-105 transition duration-300 ease-in-out"
-                      style={{
-                        backgroundImage: `url(${basePath}${post.imageUrl})`,
-                      }}
-                      role="img"
-                      aria-label="Instagram post"
-                    ></div>
+                    <img
+                      src={`${basePath}${post.imageUrl}`}
+                      alt={`${post.source} post`}
+                      className="w-full h-auto transform group-hover:scale-105 transition duration-300 ease-in-out"
+                    />
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-25 transition duration-300"></div>
                   </div>
                 </a>
@@ -172,14 +169,11 @@ const SocialPostsSection = () => {
                   className="block group"
                 >
                   <div className="relative overflow-hidden rounded-lg">
-                    <div
-                      className="aspect-square w-full bg-cover bg-center transform group-hover:scale-105 transition duration-300 ease-in-out"
-                      style={{
-                        backgroundImage: `url(${basePath}${post.imageUrl})`,
-                      }}
-                      role="img"
-                      aria-label="Facebook post"
-                    ></div>
+                    <img
+                      src={`${basePath}${post.imageUrl}`}
+                      alt={`${post.source} post`}
+                      className="w-full h-auto transform group-hover:scale-105 transition duration-300 ease-in-out"
+                    />
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-25 transition duration-300"></div>
                   </div>
                 </a>

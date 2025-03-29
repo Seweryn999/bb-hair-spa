@@ -11,9 +11,9 @@ const HeroSection = () => {
     >
       <div className="absolute inset-0 bg-black/70 flex items-center justify-center text-center px-4">
         <div>
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-light tracking-wider text-white">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl font-light tracking-wider text-white">
             BB HAIR SPA
-          </h1>
+          </h2>
           <p className="mt-4 text-lg md:text-xl lg:text-2xl text-gray-200">
             Blossom Beauty by Izabella
           </p>

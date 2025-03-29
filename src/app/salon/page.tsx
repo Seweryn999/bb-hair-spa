@@ -42,20 +42,18 @@ const SalonPage = () => {
             >
               {images.map((src, index) => (
                 <SwiperSlide key={index} className="flex justify-center">
-                  <div className="relative w-full max-w-4xl aspect-[4/3] overflow-hidden rounded-lg">
-                    <div
-                      className="w-full h-full bg-cover bg-center"
-                      style={{ backgroundImage: `url(${basePath}${src})` }}
-                      role="img"
-                      aria-label={`Zdjęcie salonu nr ${index + 1}`}
-                    ></div>
+                  <div className="relative w-full max-w-4xl h-96 flex items-center justify-center overflow-hidden rounded-lg">
+                    <img
+                      src={`${basePath}${src}`}
+                      alt={`Zdjęcie salonu nr ${index + 1}`}
+                      className="max-w-full max-h-full object-contain transform transition duration-300 ease-in-out"
+                    />
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
 
-          {/* Informacje o salonie */}
           <div className="md:w-1/2 flex flex-col items-center justify-center text-center">
             <h2 className="text-2xl font-semibold text-gray-900">
               BB Hair Spa
@@ -74,7 +72,6 @@ const SalonPage = () => {
               </a>
             </p>
 
-            {/* Godziny otwarcia */}
             <div className="mt-4 text-sm text-gray-600 leading-relaxed">
               <h3 className="font-semibold mb-1">Godziny otwarcia:</h3>
               <p>Pon: 10:00 - 20:00</p>
@@ -97,7 +94,6 @@ const SalonPage = () => {
         </div>
 
         <Testimonials />
-        {/* <SocialPostsSection /> */}
       </div>
     </section>
   );
