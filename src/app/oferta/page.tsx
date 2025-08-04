@@ -22,22 +22,26 @@ const categorizedServices: ServiceCategory[] = [
       { title: "Grzywka", price: "60 zł" },
       {
         title: "Strzyżenie damskie – Włosy do ramion",
-        details: "konsultacja",
+        details:
+          "W cenie usługi:\n• konsultacja\n• strzyżenie\n• pielęgnacja wieloetapowa Davroe\n• modelowanie",
         price: "180 zł",
       },
       {
         title: "Strzyżenie damskie – Włosy za ramiona",
-        details: "konsultacja",
+        details:
+          "W cenie usługi:\n• konsultacja\n• strzyżenie\n• pielęgnacja wieloetapowa Davroe\n• modelowanie",
         price: "200 zł",
       },
       {
         title: "Modelowanie – Włosy do ramion",
-        details: "konsultacja",
+        details: "W cenie usługi:\n- Konsultacja\n- Pielęgnacja\n- Modelowanie",
+
         price: "80 zł",
       },
       {
         title: "Modelowanie – Włosy za ramiona",
-        details: "konsultacja",
+        details: "W cenie usługi:\n- Konsultacja\n- Pielęgnacja\n- Modelowanie",
+
         price: "100 zł",
       },
     ],
@@ -54,12 +58,14 @@ const categorizedServices: ServiceCategory[] = [
     services: [
       {
         title: "Koloryzacja jednolita – Włosy do ramion",
-        details: "konsultacja",
+        details:
+          "W cenie usługi:\n• konsultacja\n•dobór koloru\n• strzyżenie\n• pielęgnacja wieloetapowa Davroe\n• modelowanie",
         price: "350 zł",
       },
       {
         title: "Koloryzacja jednolita – Włosy za ramiona",
-        details: "konsultacja",
+        details:
+          "W cenie usługi:\n• konsultacja\n•dobór koloru\n• strzyżenie\n• pielęgnacja wieloetapowa Davroe\n• modelowanie",
         price: "450 zł",
       },
     ],
@@ -69,12 +75,14 @@ const categorizedServices: ServiceCategory[] = [
     services: [
       {
         title: "Odrost – Włosy do ramion",
-        details: "konsultacja",
+        details:
+          "W cenie usługi:\n• konsultacja\n• uzupełnienie koloru do 2 cm\n• pielęgnacja wieloetapowa Davroe\n• strzyżenie\n• modelowanie",
         price: "250 zł",
       },
       {
         title: "Odrost – Włosy za ramiona",
-        details: "konsultacja",
+        details:
+          "W cenie usługi:\n• konsultacja\n• uzupełnienie koloru do 2 cm\n• pielęgnacja wieloetapowa Davroe\n• strzyżenie\n• modelowanie",
         price: "300 zł",
       },
     ],
@@ -84,25 +92,32 @@ const categorizedServices: ServiceCategory[] = [
     services: [
       {
         title: "Refleksy – Włosy do ramion",
-        details: "konsultacja",
+        details:
+          "W cenie usługi:\n• konsultacja\n• dobór koloru\n• pielęgnacja wieloetapowa Davroe\n• tonowanie\n• strzyżenie\n• modelowanie",
         price: "400 zł",
       },
       {
         title: "Refleksy – Włosy za ramiona",
-        details: "konsultacja",
+        details:
+          "W cenie usługi:\n• konsultacja\n• dobór koloru\n• pielęgnacja wieloetapowa Davroe\n• tonowanie\n• strzyżenie\n• modelowanie",
         price: "480 zł",
       },
     ],
   },
   {
-    name: "Farbowanie odrostu + Refleksy",
+    name: "Farbowanie odrostu + Refleksy na koronie",
     services: [
       {
         title: "Farbowanie odrostu + Refleksy – Włosy do ramion",
+        details:
+          "Usługa polegająca na uzupełnieniu odrostu i odświeżeniu koloru na długości poprzez wprowadzenie delikatnych pojaśnień na koronie.",
         price: "420 zł",
       },
       {
         title: "Farbowanie odrostu + Refleksy – Włosy za ramiona",
+        details:
+          "Usługa polegająca na uzupełnieniu odrostu i odświeżeniu koloru na długości poprzez wprowadzenie delikatnych pojaśnień na koronie.",
+
         price: "470 zł",
       },
     ],
@@ -112,12 +127,14 @@ const categorizedServices: ServiceCategory[] = [
     services: [
       {
         title: "Tonowanie / Pigmentacja – Włosy do ramion",
-        details: "konsultacja",
+        details:
+          "W cenie usługi:\n• konsultacja\n• tonowanie\n• pielęgnacja wieloetapowa Davroe\n• modelowanie",
         price: "200 zł",
       },
       {
         title: "Tonowanie / Pigmentacja – Włosy za ramiona",
-        details: "konsultacja",
+        details:
+          "W cenie usługi:\n• konsultacja\n• tonowanie\n• pielęgnacja wieloetapowa Davroe\n• modelowanie",
         price: "250 zł",
       },
     ],
@@ -126,13 +143,16 @@ const categorizedServices: ServiceCategory[] = [
     name: "Baleyage / AirTouch",
     services: [
       {
-        title: "Baleyage / Alrtouch – Włosy do ramion",
-        details: "konsultacja",
+        title: "Baleyage / AirTouch – Włosy do ramion",
+        details:
+          "W cenie usługi:\n• konsultacja\n• dobór koloru\n• wielowymiarowa koloryzacja z naturalnym przejściem\n• strzyżenie\n• pielęgnacja wieloetapowa Davroe\n• modelowanie",
+
         price: "600 zł",
       },
       {
-        title: "Baleyage / Alrtouch – Włosy za ramiona",
-        details: "konsultacja",
+        title: "Baleyage / AirTouch – Włosy za ramiona",
+        details:
+          "W cenie usługi:\n• konsultacja\n• dobór koloru\n• wielowymiarowa koloryzacja z naturalnym przejściem\n• strzyżenie\n• pielęgnacja wieloetapowa Davroe\n• modelowanie",
         price: "700 zł",
       },
     ],
@@ -142,24 +162,50 @@ const categorizedServices: ServiceCategory[] = [
     services: [
       {
         title: "Pielęgnacja dobrana do potrzeb włosów – Włosy do ramion",
+        details: "Indywidualna pielęgnacja dobrana do potrzeb włosów.",
         price: "190 zł",
       },
       {
         title: "Pielęgnacja dobrana do potrzeb włosów – Włosy za ramiona",
+        details: "Indywidualna pielęgnacja dobrana do potrzeb włosów.",
         price: "240 zł",
       },
-      { title: "Pielęgnacja Davroe – Włosy do ramion", price: "190 zł" },
-      { title: "Pielęgnacja Davroe – Włosy za ramiona", price: "240 zł" },
+      {
+        title: "Pielęgnacja Davroe – Włosy do ramion",
+        details:
+          "Davroe to idealna pielęgnacja dla włosów zniszczonych, kruchych, łamliwych lub rozjaśnianych. Proteinowy rekonstruktor włosów naprawia, regeneruje i wzmacnia zniszczone włosy, odbudowując naturalną elastyczność włosów przywracając im blask i odżywienie.",
+        price: "190 zł",
+      },
+      {
+        title: "Pielęgnacja Davroe – Włosy za ramiona",
+        details:
+          "Davroe to idealna pielęgnacja dla włosów zniszczonych, kruchych, łamliwych lub rozjaśnianych. Proteinowy rekonstruktor włosów naprawia, regeneruje i wzmacnia zniszczone włosy, odbudowując naturalną elastyczność włosów przywracając im blask i odżywienie.",
+        price: "240 zł",
+      },
       {
         title: "Kuracja Kaszmirową Keratyną – Włosy do ramion",
+        details:
+          "Kuracja kaszmirową keratyną to idealne rozwiązanie dla cienkich, słowiańskich włosów tworząc efekt pogrubienia, ale bez obciążenia. Kuracja polega na odbudowaniu wiązania keratynowego wewnątrz włosa. Dodatkowo, regeneruje łuskę włosa po farbowaniu lub rozjaśnianiu włosów, a także wyrównuje i wygładza i nawilża strukturę zniszczonych i porowatych włosów. Aby podtrzymać efekt zabiegu polecamy szampon i odżywkę BIOACTIVE NATURALIS oraz serum arganowe BIOACTIVE HS3.",
         price: "370 zł",
       },
       {
         title: "Kuracja Kaszmirową Keratyną – Włosy za ramiona",
+        details:
+          "Kuracja kaszmirową keratyną to idealne rozwiązanie dla cienkich, słowiańskich włosów tworząc efekt pogrubienia, ale bez obciążenia. Kuracja polega na odbudowaniu wiązania keratynowego wewnątrz włosa. Dodatkowo, regeneruje łuskę włosa po farbowaniu lub rozjaśnianiu włosów, a także wyrównuje i wygładza i nawilża strukturę zniszczonych i porowatych włosów. Aby podtrzymać efekt zabiegu polecamy szampon i odżywkę BIOACTIVE NATURALIS oraz serum arganowe BIOACTIVE HS3.",
         price: "450 zł",
       },
-      { title: "Prostowanie keratynowe – Włosy do ramion", price: "500 zł" },
-      { title: "Prostowanie keratynowe – Włosy za ramiona", price: "600 zł" },
+      {
+        title: "Prostowanie keratynowe – Włosy do ramion",
+        details:
+          "Zabieg, który odbudowuje i wzmacnia włosy nadając im miękkość, jedwabistą gładkość i połysk, a tym samym chroni je przed wilgocią i uszkodzeniami mechanicznymi. Zabieg dedykowany dla włosów kręconych, puszących się i trudnych do ujarzmienia.",
+        price: "500 zł",
+      },
+      {
+        title: "Prostowanie keratynowe – Włosy za ramiona",
+        details:
+          "Zabieg, który odbudowuje i wzmacnia włosy nadając im miękkość, jedwabistą gładkość i połysk, a tym samym chroni je przed wilgocią i uszkodzeniami mechanicznymi. Zabieg dedykowany dla włosów kręconych, puszących się i trudnych do ujarzmienia.",
+        price: "600 zł",
+      },
       { title: "Nanoplastia – Włosy do ramion", price: "800 zł" },
       { title: "Nanoplastia – Włosy za ramiona", price: "1000 zł" },
     ],
@@ -169,10 +215,14 @@ const categorizedServices: ServiceCategory[] = [
     services: [
       {
         title: "Zabieg trychologiczny – Infuzja – Włosy do ramion",
+        details:
+          "Zabieg oczyszczający, pobudzający, anti aging, przeciwłojotokowy, przeciw wypadaniu włosów, przeciwłupieżowy.",
         price: "250 zł",
       },
       {
         title: "Zabieg trychologiczny – Infuzja – Włosy za ramiona",
+        details:
+          "Zabieg oczyszczający, pobudzający, anti aging, przeciwłojotokowy, przeciw wypadaniu włosów, przeciwłupieżowy.",
         price: "270 zł",
       },
     ],
@@ -219,10 +269,10 @@ const OfertaPage = () => {
           Nasza oferta
         </h1>
         <p className="text-base md:text-lg text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-          Wszystkie nasze usługi zawierają indywidualne podejście, najwyższej
-          jakości pielęgnację oraz stylizację. Ostateczna cena może się różnić w
-          zależności od długości i kondycji włosów – ustalana jest podczas
-          konsultacji.
+          Każda z naszych usług rozpoczyna się konsultacją, podczas której
+          dobieramy idealną pielęgnację i stylizację dostosowaną do potrzeb
+          Twoich włosów. Ostateczna cena może się różnić w zależności od
+          długości i kondycji włosów – ustalana jest podczas konsultacji.
         </p>
 
         <div className="space-y-12">
@@ -244,7 +294,7 @@ const OfertaPage = () => {
                           {service.title}
                         </h3>
                         {service.details && (
-                          <p className="text-sm text-gray-500 mt-1 leading-relaxed">
+                          <p className="text-sm text-gray-500 mt-1 leading-relaxed whitespace-pre-line">
                             {service.details}
                           </p>
                         )}
@@ -255,7 +305,7 @@ const OfertaPage = () => {
                         )}
                       </div>
                     </div>
-                    <div className="mt-4 md:mt-0 md:text-right">
+                    <div className="mt-4 md:mt-0 md:text-right md:ml-6">
                       <a
                         href="https://booksy.com/pl-pl/252493_bb-hair-spa_fryzjer_23280_lodz#ba_s=sr_1"
                         className="inline-block bg-gray-900 text-white text-sm font-medium px-6 py-2 rounded-full hover:bg-gray-700 transition-colors duration-200"
@@ -271,7 +321,7 @@ const OfertaPage = () => {
         </div>
       </div>
 
-      <div className="mt-8"></div>
+      <div className="mt-16 md:mt-24"></div>
       <SocialPostsSection />
     </section>
   );
