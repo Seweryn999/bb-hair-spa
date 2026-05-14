@@ -1,8 +1,9 @@
 {
+  "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/kontakt/page": "/kontakt",
   "/oferta/page": "/oferta",
   "/page": "/",
-  "/salon/page": "/salon",
-  "/polityka-prywatnosci/page": "/polityka-prywatnosci"
+  "/polityka-prywatnosci/page": "/polityka-prywatnosci",
+  "/salon/page": "/salon"
 }
