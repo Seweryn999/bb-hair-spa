@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[97367,["/_next/static/chunks/0uvozpfqvmat-.js","/_next/static/chunks/0z-co10e27.vz.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
-3:I[97367,["/_next/static/chunks/0uvozpfqvmat-.js","/_next/static/chunks/0z-co10e27.vz.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
-4:"$Sreact.suspense"
-5:I[27201,["/_next/static/chunks/0uvozpfqvmat-.js","/_next/static/chunks/0z-co10e27.vz.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"IconMark"]
-0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"BB Hair Spa"}],["$","meta","1",{"name":"description","content":"Salon fryzjerski – Twoje piękno w dobrych rękach."}],["$","link","2",{"rel":"icon","href":"/logob.svg"}],["$","$L5","3",{}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Zi7j9hTPhyOcim6mBtOOB"}
