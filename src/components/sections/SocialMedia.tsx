@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { asset } from "../../lib/asset";
 
 interface Post {
   id: string;
@@ -143,7 +144,7 @@ const SocialPostsSection = () => {
                 >
                   <div className="relative overflow-hidden rounded-lg">
                     <img
-                      src={post.imageUrl}
+                      src={asset(post.imageUrl)}
                       alt={`${post.source} post`}
                       className="w-full h-auto transform group-hover:scale-105 transition duration-300 ease-in-out"
                     />
@@ -169,7 +170,7 @@ const SocialPostsSection = () => {
                 >
                   <div className="relative overflow-hidden rounded-lg">
                     <img
-                      src={post.imageUrl}
+                      src={asset(post.imageUrl)}
                       alt={`${post.source} post`}
                       className="w-full h-auto transform group-hover:scale-105 transition duration-300 ease-in-out"
                     />

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { asset } from "../../../lib/asset";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div>
           <div className="mb-4">
             <Image
-              src="/logoog.png"
+              src={asset("/logoog.png")}
               alt="BB Hair Spa Logo"
               width={150}
               height={50}

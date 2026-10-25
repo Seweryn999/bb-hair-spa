@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import { asset } from "../../lib/asset";
 
 const SalonPage = () => {
   const images = [
@@ -42,7 +43,7 @@ const SalonPage = () => {
                 <SwiperSlide key={index} className="flex justify-center">
                   <div className="relative w-full max-w-4xl h-96 flex items-center justify-center overflow-hidden rounded-lg">
                     <img
-                      src={src}
+                      src={asset(src)}
                       alt={`Zdjęcie salonu nr ${index + 1}`}
                       className="max-w-full max-h-full object-contain transform transition duration-300 ease-in-out"
                     />

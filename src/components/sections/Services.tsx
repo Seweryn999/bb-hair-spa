@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { asset } from "../../lib/asset";
 
 const Services = () => {
   const homeOffers = [
@@ -51,7 +52,7 @@ const Services = () => {
               <div
                 className="w-full h-[300px] rounded-md mb-4 bg-cover bg-center"
                 style={{
-                  backgroundImage: `url('${offer.image}')`,
+                  backgroundImage: `url('${asset(offer.image)}')`,
                 }}
                 role="img"
                 aria-label={offer.title}

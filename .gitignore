@@ -59,3 +59,6 @@ yarn-error.log*
 
 # Next.js build output
 .next/
+
+# Static export output (built in CI)
+out/

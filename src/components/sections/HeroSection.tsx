@@ -1,3 +1,4 @@
+import { asset } from "../../lib/asset";
 import { FaArrowDown } from "react-icons/fa";
 
 const HeroSection = () => {
@@ -5,7 +6,7 @@ const HeroSection = () => {
     <section
       id="hero"
       className="h-[40vh] md:h-[90vh] bg-cover bg-center relative pt-16"
-      style={{ backgroundImage: "url('/images/hero1.jpg')" }}
+      style={{ backgroundImage: `url('${asset("/images/hero1.jpg")}')` }}
     >
       <div className="absolute inset-0 bg-black/70 flex items-center justify-center text-center px-4">
         <div>

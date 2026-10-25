@@ -2,12 +2,13 @@ import "../styles/globals.css";
 import { ReactNode } from "react";
 import Header from "../components/ui/layout/Header";
 import Footer from "../components/ui/layout/Footer";
+import { asset } from "../lib/asset";
 
 export const metadata = {
   title: "BB Hair Spa",
   description: "Salon fryzjerski – Twoje piękno w dobrych rękach.",
   icons: {
-    icon: "/logob.svg", // favicon
+    icon: asset("/logob.svg"), // favicon
   },
   themeColor: "#000000",
 };

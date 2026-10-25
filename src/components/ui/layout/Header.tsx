@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { asset } from "../../../lib/asset";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -60,9 +61,9 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-4 py-4">
         <Link href="/" className="flex items-center space-x-2">
           {scrolled ? (
-            <Image src="/logob.svg" alt="Logo" width={40} height={40} />
+            <Image src={asset("/logob.svg")} alt="Logo" width={40} height={40} />
           ) : (
-            <Image src="/logow.svg" alt="Logo" width={40} height={40} />
+            <Image src={asset("/logow.svg")} alt="Logo" width={40} height={40} />
           )}
           <span
             className="text-2xl font-light tracking-wide transition-colors duration-300"
